@@ -98,12 +98,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Afeta integridade dos dados e usabilidade.
 
-<div>
-<b>Impacto:</b> 🔴 Alto
-<div style="width:220px;background:#ffffff;border-radius:6px;">
-<div style="width:100%;background:#e53935;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🔴 Alto
 
 ## 🐞 Bug 2 - Botão de delete não remove o curso cadastrado
 
@@ -120,12 +115,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Impede a remoção de registros e compromete o gerenciamento dos cursos.
 
-<div>
-<b>Impacto:</b> 🔴 Alto
-<div style="width:220px;background:#ffffff;border-radius:6px;">
-<div style="width:100%;background:#e53935;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🔴 Alto
 
 ## 🐞 Bug 3 - Sistema permite cadastrar curso com datas invertidas
 
@@ -144,12 +134,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Permite cadastro de cursos com períodos inválidos, causando inconsistência nos dados.
 
-<div>
-<b>Impacto:</b> 🟡 Médio
-<div style="width:220px;background:#ffffff;border-radius:6px;">
-<div style="width:50%;background:#fbc02d;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🟡 Médio
 
 ## 🐞 Bug 4 - Campo de vagas aceita valores decimais ou negativos
 
@@ -166,12 +151,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Permite cadastro de valores inconsistentes para a quantidade de vagas.
 
-<div>
-<b>Impacto:</b> 🟡 Médio
-<div style="width:220px;background:#ffffff;border-radius:6px;">
-<div style="width:50%;background:#fbc02d;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🟡 Médio
 
 ## 🐞 Bug 5 - Campo de quantidade de vagas aceita caracteres alfabéticos e especiais
 
@@ -188,12 +168,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Permite cadastro de cursos com informações incompletas ou inconsistentes.
 
-<div>
-<b>Impacto:</b> 🟡 Médio
-<div style="width:220px;background:#eee;border-radius:6px;">
-<div style="width:50%;background:#fbc02d;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🟡 Médio
 
 ## 🐞 Bug 6 - Stored HTML Injection – Tags HTML são renderizadas na listagem sem sanitização
 
@@ -215,13 +190,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Gravidade alta devido ao defacement persistente via localStorage, que compromete a usabilidade e integridade visual da aplicação para todos os acessos subsequentes. Embora não execute JS, representa risco de escalada em ambientes sem CSP rigoroso.
 
-<div>
-<b>Impacto:</b> 🔴 Alto
-<div style="width:220px;background:#eee;border-radius:6px;">
-<div style="width:100%;background:#e53935;height:10px;border-radius:6px;"></div>
-</div>
-</div>
-
+**Impacto:** 🔴 Alto
 
 ## 🐞 Bug 7 - Página de cadastro apresenta erro 404 ao ser recarregada
 
@@ -239,12 +208,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** Impede que usuários compartilhem o link direto da página de cadastro, causa frustração ao usuário que tenta recarregar a página durante o preenchimento do formulário, indica possível problema de configuração de rotas no front-end (provavelmente aplicação SPA sem tratamento adequado de rotas no servidor), compromete a experiência do usuário e a confiabilidade da aplicação.
 
-<div>
-<b>Impacto:</b> 🟡 Médio
-<div style="width:220px;background:#eee;border-radius:6px;">
-<div style="width:50%;background:#fbc02d;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🟡 Médio
 
 ## 🐞 Bug 8 - Manipulação de dados no LocalStorage
 
@@ -263,12 +227,7 @@ Cada bug inclui título, passos para reproduzir, resultado atual, resultado espe
 
 **Consequência:** É possível alterar manualmente os valores das chaves no `localStorage` (como nomes de cursos, vagas ou datas) e a aplicação renderiza essas alterações após o refresh, permitindo a exibição de dados falsos ou corrompidos.
 
-<div style="margin-bottom: 20px;">
-<b>Impacto:</b> 🔴 Alto
-<div style="width:220px;background:#eee;border-radius:6px;">
-<div style="width:100%;background:#e53935;height:10px;border-radius:6px;"></div>
-</div>
-</div>
+**Impacto:** 🔴 Alto
 
 # 🔎 Resumo da análise
 Durante a execução dos testes foi realizada uma análise exploratória da aplicação, com o objetivo de validar o funcionamento das principais funcionalidades, identificar cenários de erro e verificar a consistência das validações de entrada.  
